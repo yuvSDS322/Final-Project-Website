@@ -31,8 +31,8 @@
 
     img {
       display: block;
-      width: 30%;
-      height: 30%;
+      width: 50%;
+      height: 50%;
       margin-left: auto;
       margin-right: auto;
       float: center;
@@ -46,6 +46,16 @@
   <p>
     <b>Team members:</b> Kishen Narayan, Kathleen Leever, Yuvraj Uddanti, Diya Sharma, Laura Nylykke, Nick Read, Sam Song
   </p>
+  <h3>Links</h3>
+  <ul>
+    <li>
+      <a href="https://github.com/sarvagnyanarayan/myocardial-infarctions" target="_blank">GitHub Repo</a>
+    </li><br>
+    <li>
+      <a href="https://github.com/sarvagnyanarayan/myocardial-infarctions/blob/main/Report%20Final%20project%20SDS.pdf" target="_blank">Final Report</a>
+    </li>
+  </ul>
+  <hr>
   <h3>Project Description</h3>
   <p>
     Our project goals are to predict complications of Myocardial Infarctions (MI) based on information about the patient at the time of admission and on the third day of the hospital period.<br><br>
@@ -55,7 +65,7 @@
   <hr>
   <h3>Our Dataset</h3>
   <p>
-    The University of California at Irvine (UCI) maintains multiple datasets used for various ML tasks. The <a href="https://leicester.figshare.com/articles/dataset/Myocardial_infarction_complications_Database/12045261/3" target="_blank" rel="noopener noreferrer">Myocardial Infarction Complications</a> dataset was created by the University of Leicester. The dataset contains different complications related to MI and measures a variety of inputs related to the patient upon admission to the hospital and the ends of the first, second and third days. The various complications include but are not limited to Atrial Fibrilation, Supraventricular Tachycardia, Ventrircular Tachycardia, etc. The input features measured for each patient include but are not limited to age, gender, sex, first-degree AV block in the anamnesis, etc.<br><br>
+    The University of California at Irvine (UCI) maintains multiple datasets used for various ML tasks. The <a href="https://leicester.figshare.com/articles/dataset/Myocardial_infarction_complications_Database/12045261/3" target="_blank" rel="noopener noreferrer" target="_blank">Myocardial Infarction Complications</a> dataset was created by the University of Leicester. The dataset contains different complications related to MI and measures a variety of inputs related to the patient upon admission to the hospital and the ends of the first, second and third days. The various complications include but are not limited to Atrial Fibrilation, Supraventricular Tachycardia, Ventrircular Tachycardia, etc. The input features measured for each patient include but are not limited to age, gender, sex, first-degree AV block in the anamnesis, etc.<br><br>
 
     For our exploratory analysis we will only look at a certain number of the most common complications by selected input features.
   </p>
@@ -69,20 +79,20 @@
   <ol>
     <li>
       <p>If an individual has a severity level 1 of ZSN_A (Presence of chronic heart failure (HF) in the anamnesis), then the person is more likely to develop ZSN (Chronic heart failure) as a complication of MI.</p>
-      <img src="https://drive.google.com/uc?export=view&id=10Vj7kqp-dm7jvtRAOkmm43HNiI90ZMtV">
-    </li><br>
+      <!--<img src="https://drive.google.com/uc?export=view&id=10Vj7kqp-dm7jvtRAOkmm43HNiI90ZMtV">-->
+    </li>
 
     <li>
       <p>If a patient has had n_r_ecg_p_05 (paroxysms of atrial fibrillation on ECG at the time of admission to the hospital), they are more likely to develop FIBR_PREDS (atrial fibrillation) as a complication of MI.</p>
-      <img src="https://drive.google.com/uc?export=view&id=1TdaifCG3E4Eei6tRpgjsNxmO4l99Avaz">
-    </li><br>
+      <!--<img src="https://drive.google.com/uc?export=view&id=1TdaifCG3E4Eei6tRpgjsNxmO4l99Avaz">-->
+    </li>
     <li>
       <p>If a patient has had NITR_S (liquid nitrates used in the ICU) used for treatment, then there is a greater chance that the patient develops OTEK_LANC (pulmonary edema) as a complication of MI.</p>
-      <img src="https://drive.google.com/uc?export=view&id=1Vf0WoD4VnvYHn-xEaHLYgLGFQlewA7qF">
-    </li><br>
+      <!--<img src="https://drive.google.com/uc?export=view&id=1Vf0WoD4VnvYHn-xEaHLYgLGFQlewA7qF">-->
+    </li>
     <li>
       <p>If the patient experiences R_AB_3_n (relapse of pain on the third day of the hospital period), then they are more likely to develop REC_IM (relapse of the myocardial infarction) as a complication of MI.</p>
-      <img src="https://drive.google.com/uc?export=view&id=1aJ80dKBqmel0JdbPrTjl0dU2gdBPLK1u">
+      <!--<img src="https://drive.google.com/uc?export=view&id=1aJ80dKBqmel0JdbPrTjl0dU2gdBPLK1u">-->
     </li>
   </ol>
   <p>
@@ -93,7 +103,7 @@
   <ul>
     <p>
       <li>
-        There were some limitations in our analysis. There were a large number of input columns so it was difficult to fully understand the contribution of certain columns to the presence of a specific complication as a result of MI. It was also difficult to properly clean the data since it was a mix of continuous, nominal, and ordinal data types. Furthermore, we only used the Knn classifier in our modelling but we could have used others.</li><br><br>
+        There were some limitations in our analysis. There were a large number of input columns so it was difficult to fully understand the contribution of certain columns to the presence of a specific complication as a result of MI. It was also difficult to properly clean the data since it was a mix of continuous, nominal, and ordinal data types. Furthermore, we only used the Knn classifier in our modelling but we could have used others.</li><br>
       <li> In conclusion, we saw that chronic heart failure (ZSN) was the highest precision score complication associated with MI, which matches our earlier observations. We also saw that supraventricular tachycardia (PREDS_TAH) was the highest accuracy score complication associated with MI, which also matched our earlier observations. If we knew more about the medical significance of each input column, we could have better seen what complications of MI were impacted by patient characteristics, such as gender or age.
     </p>
     </li>
@@ -101,11 +111,11 @@
   <hr>
   <h4>References</h4>
   <ul style="font-size:13px">
-    <li><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=480871&tag=1">https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=480871&tag=1</a></li><br>
-    <li>Golovenkin, S. E., Shulman, V. A., Rossiev, D. A., Shesternya, P. A., Nikulina, S. Y., Orlova, Y. V., Krasnoyarsk, V. F. V.-Y., Gorban, A. N., & Mirkes, E. M. (2020, December 9). Myocardial infarction complications Data Set. Irvine. Retrieved from <a href="https://archive.ics.uci.edu/ml/datasets/Myocardial+infarction+complications">https://archive.ics.uci.edu/ml/datasets/Myocardial+infarction+complications</a>. </li><br>
-    <li>Golovenkin, S. E., Bac, J., Chervov, A., Mirkes, E. M., Orlova, Y. V., Barillot, E., Gorban, A. N., & Zinovyev, A. (2020). Trajectories, bifurcations, and pseudo-time in large clinical datasets: Applications to myocardial infarction and diabetes data. GigaScience, 9(11). <a href="https://doi.org/10.1093/gigascience/giaa128">https://doi.org/10.1093/gigascience/giaa128</a>
+    <li><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=480871&tag=1" target="_blank">https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=480871&tag=1</a></li><br>
+    <li>Golovenkin, S. E., Shulman, V. A., Rossiev, D. A., Shesternya, P. A., Nikulina, S. Y., Orlova, Y. V., Krasnoyarsk, V. F. V.-Y., Gorban, A. N., & Mirkes, E. M. (2020, December 9). Myocardial infarction complications Data Set. Irvine. Retrieved from <a href="https://archive.ics.uci.edu/ml/datasets/Myocardial+infarction+complications" target="_blank">https://archive.ics.uci.edu/ml/datasets/Myocardial+infarction+complications</a>. </li><br>
+    <li>Golovenkin, S. E., Bac, J., Chervov, A., Mirkes, E. M., Orlova, Y. V., Barillot, E., Gorban, A. N., & Zinovyev, A. (2020). Trajectories, bifurcations, and pseudo-time in large clinical datasets: Applications to myocardial infarction and diabetes data. GigaScience, 9(11). <a href="https://doi.org/10.1093/gigascience/giaa128" target="_blank">https://doi.org/10.1093/gigascience/giaa128</a>
     </li><br>
-    <li>Damluji, A. A., van Diepen, S., Katz, J. N., Menon, V., Tamis-Holland, J. E., Bakitas, M., Cohen, M. G., Balsam, L. B., & Chikwe, J. (2021). Mechanical complications of acute myocardial infarction: A scientific statement from the American Heart Association. Circulation, 144(2). <a href="https://doi.org/10.1161/cir.0000000000000985">https://doi.org/10.1161/cir.0000000000000985</a></li>
+    <li>Damluji, A. A., van Diepen, S., Katz, J. N., Menon, V., Tamis-Holland, J. E., Bakitas, M., Cohen, M. G., Balsam, L. B., & Chikwe, J. (2021). Mechanical complications of acute myocardial infarction: A scientific statement from the American Heart Association. Circulation, 144(2). <a href="https://doi.org/10.1161/cir.0000000000000985" target="_blank">https://doi.org/10.1161/cir.0000000000000985</a></li>
   </ul>
   <br>
   <br>
